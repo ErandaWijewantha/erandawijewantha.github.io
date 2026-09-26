@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>Eranda Wijewantha — Learn, explore, grow</title>
+  <link>https://erandawijewantha.github.io/blog/</link>
+  <atom:link href="https://erandawijewantha.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+  <description>Articles on data, analytics, tools and career growth.</description>
+  <language>en</language>
+  <item>
+    <title>Getting started with SQL for data analysis</title>
+    <link>https://erandawijewantha.github.io/blog/getting-started-with-sql-for-data-analysis/</link>
+    <guid>https://erandawijewantha.github.io/blog/getting-started-with-sql-for-data-analysis/</guid>
+    <pubDate>Tue, 12 Aug 2025 00:00:00 +0530</pubDate>
+    <category>SQL</category>
+    <description>A practical introduction to sql.</description>
+  </item>
+  <item>
+    <title>Power BI DAX basics for beginners</title>
+    <link>https://erandawijewantha.github.io/blog/power-bi-dax-basics-for-beginners/</link>
+    <guid>https://erandawijewantha.github.io/blog/power-bi-dax-basics-for-beginners/</guid>
+    <pubDate>Tue, 05 Aug 2025 00:00:00 +0530</pubDate>
+    <category>Power BI</category>
+    <description>A practical introduction to power bi.</description>
+  </item>
+  <item>
+    <title>Building a data pipeline with Airflow</title>
+    <link>https://erandawijewantha.github.io/blog/building-a-data-pipeline-with-airflow/</link>
+    <guid>https://erandawijewantha.github.io/blog/building-a-data-pipeline-with-airflow/</guid>
+    <pubDate>Mon, 28 Jul 2025 00:00:00 +0530</pubDate>
+    <category>Data engineering</category>
+    <description>A practical introduction to data engineering.</description>
+  </item>
+  <item>
+    <title>My journey into data science — and what I learned</title>
+    <link>https://erandawijewantha.github.io/blog/my-journey-into-data-science-and-what-i-learned/</link>
+    <guid>https://erandawijewantha.github.io/blog/my-journey-into-data-science-and-what-i-learned/</guid>
+    <pubDate>Tue, 15 Jul 2025 00:00:00 +0530</pubDate>
+    <category>Career</category>
+    <description>A practical introduction to career.</description>
+  </item>
+</channel>
+</rss>

@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fraud detection (HND research) — Eranda Wijewantha</title>
+  <meta name="description" content="Classification model flagging high-risk transactions.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Eranda Wijewantha">
+  <link rel="canonical" href="https://erandawijewantha.github.io/projects/fraud-detection-hnd-research/">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Eranda Wijewantha">
+  <meta property="og:title" content="Fraud detection (HND research) — Eranda Wijewantha">
+  <meta property="og:description" content="Classification model flagging high-risk transactions.">
+  <meta property="og:url" content="https://erandawijewantha.github.io/projects/fraud-detection-hnd-research/">
+  <meta property="og:image" content="https://erandawijewantha.github.io/og-image.png">
+  <meta property="og:locale" content="en_LK">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Fraud detection (HND research) — Eranda Wijewantha">
+  <meta name="twitter:description" content="Classification model flagging high-risk transactions.">
+  <meta name="twitter:image" content="https://erandawijewantha.github.io/og-image.png">
+  <meta name="geo.region" content="LK">
+  
+  
+  
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="alternate" type="application/rss+xml" title="Eranda Wijewantha — Blog" href="https://erandawijewantha.github.io/feed.xml">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "CreativeWork", "name": "Fraud detection (HND research)", "description": "Classification model flagging high-risk transactions.", "url": "https://erandawijewantha.github.io/projects/fraud-detection-hnd-research/", "genre": "Machine learning · Fraud", "keywords": "Python, Scikit-learn", "dateCreated": "2026-09-26", "image": "https://erandawijewantha.github.io/og-image.png", "creator": {"@type": "Person", "name": "Eranda Wijewantha", "url": "https://erandawijewantha.github.io/"}}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://erandawijewantha.github.io/"}, {"@type": "ListItem", "position": 2, "name": "Projects", "item": "https://erandawijewantha.github.io/projects/"}, {"@type": "ListItem", "position": 3, "name": "Fraud detection (HND research)", "item": "https://erandawijewantha.github.io/projects/fraud-detection-hnd-research/"}]}</script>
+  <script>
+    try { const t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+    if (!document.documentElement.dataset.theme && matchMedia("(prefers-color-scheme: dark)").matches) document.documentElement.dataset.theme = "dark";
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/portfolio/site.css">
+  
+</head>
+<body class="">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <a href="/" class="brand">
+      <span class="brand-mark">EW</span>
+      <span class="brand-text"><strong>Eranda Wijewantha</strong><small>Data Analyst · Data Engineer</small></span>
+    </a>
+    <nav class="nav-links" aria-label="Main"><a href="/">Home</a>
+<a href="/about/">About</a>
+<a href="/projects/" aria-current="page">Projects</a>
+<a href="/services/">Services</a>
+<a href="/blog/">Blog</a>
+<a href="/youtube/">YouTube</a>
+<a href="/contact/">Contact</a>
+</nav>
+    <button class="btn btn-secondary btn-square theme-toggle" type="button" aria-label="Toggle dark mode">
+      <span class="show-light"><svg class="icon " width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg></span><span class="show-dark"><svg class="icon " width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2m-7.07-17.07 1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg></span>
+    </button>
+    <a href="/contact/?subject=CV%20request" class="btn btn-primary nav-cv"><svg class="icon " width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>Download CV</a>
+    <button class="btn btn-secondary btn-square menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+  </header>
+
+  <div class="drawer" id="drawer" hidden>
+    <div class="drawer-panel">
+      <button class="btn btn-secondary btn-square drawer-close" type="button" aria-label="Close menu"><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+      <nav class="drawer-links" aria-label="Mobile"><a href="/">Home</a>
+<a href="/about/">About</a>
+<a href="/projects/" aria-current="page">Projects</a>
+<a href="/services/">Services</a>
+<a href="/blog/">Blog</a>
+<a href="/youtube/">YouTube</a>
+<a href="/contact/">Contact</a>
+</nav>
+      <a href="/contact/?subject=CV%20request" class="btn btn-primary btn-lg"><svg class="icon " width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>Download CV</a>
+    </div>
+  </div>
+
+  <main id="main">
+    
+    
+<article class="detail">
+  <div class="detail-inner">
+    <a href="/projects/" class="back">← All projects</a>
+    <span class="cat">Machine learning · Fraud</span>
+    <h1>Fraud detection (HND research)</h1>
+    <p class="lead">Classification model flagging high-risk transactions.</p>
+    
+    <div class="need-outcome">
+      <div class="box"><span class="label muted">Business need</span>Spot fraudulent transactions before losses land.</div>
+      <div class="box"><span class="label accent-text">Outcome</span>Classification model flagging high-risk transactions.</div>
+    </div>
+    
+    <div class="tags"><span class="chip"><i></i>Python</span><span class="chip"><i></i>Scikit-learn</span></div>
+    
+    <div class="detail-media"><div class="preview">
+  
+  <span class="preview-label">project screenshot</span>
+  <div class="spark" aria-hidden="true"><i style="height:35%"></i><i style="height:40%"></i><i style="height:54%"></i><i style="height:52%"></i><i style="height:43%"></i><i style="height:33%"></i><i style="height:27%"></i><i style="height:38%"></i><i style="height:46%"></i><i style="height:51%" class="hot"></i><i style="height:65%" class="hot"></i><i style="height:78%" class="hot"></i></div>
+  
+</div>
+</div>
+    <div class="prose"><h2>The problem</h2>
+<p>Spot fraudulent transactions before losses land.</p>
+<h2>What I built</h2>
+<p>Classification model flagging high-risk transactions.</p>
+<h2>Approach</h2>
+<ul>
+<li>Collected and cleaned the data</li>
+<li>Built the model / dashboard</li>
+<li>Shared the results with stakeholders</li>
+</ul>
+<p><em>Edit this write-up in the admin panel.</em></p></div>
+  </div>
+</article>
+
+  </main>
+
+  
+  <section class="cta">
+    <div class="cta-text">
+      <h2>Let’s work together</h2>
+      <p>Have a project, collaboration or job opportunity? Feel free to reach out.</p>
+    </div>
+    <div class="cta-actions">
+      <a href="/contact/" class="btn btn-pill">Get in touch <span aria-hidden="true">→</span></a>
+      <a href="mailto:erandalakshan3567@gmail.com" class="cta-mail">erandalakshan3567@gmail.com</a>
+    </div>
+  </section>
+  
+
+  <footer class="footer">
+    <div class="footer-top">
+      <span class="footer-name">Eranda Wijewantha <span class="muted">· Data Analyst · Data Engineer</span></span>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="/about/">About</a><a href="/projects/">Projects</a><a href="/services/">Services</a><a href="/blog/">Blog</a><a href="/youtube/">YouTube</a><a href="/contact/">Contact</a>
+      </nav>
+    </div>
+    <div class="footer-bottom muted">
+      <span>© 2026 Eranda Wijewantha. All rights reserved.</span>
+      <span>Sri Lanka · Working remotely worldwide</span>
+    </div>
+  </footer>
+
+  <script src="/static/portfolio/site.js"></script>
+  
+</body>
+</html>
